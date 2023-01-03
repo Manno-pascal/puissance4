@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Jeu du puissance 4</h1>
+    </header>
+    <main>
+        <div id="container">
+            <div id="board">
+                <div onclick="addcoin(this)" class="column">
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+
+                </div>
+                <div onclick="addcoin(this)" class="column">
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                </div>
+                <div onclick="addcoin(this)" class="column">
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                </div>
+                <div onclick="addcoin(this)" class="column">
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vColumn vLine vDiagonalDown"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                    <div class="cell vLine vDiagonalUp"></div>
+                </div>
+                <div onclick="addcoin(this)" class="column">
+                    <div class="cell vColumn"></div>
+                    <div class="cell vColumn"></div>
+                    <div class="cell vColumn"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div onclick="addcoin(this)" class="column">
+                    <div class="cell vColumn"></div>
+                    <div class="cell vColumn"></div>
+                    <div class="cell vColumn"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div onclick="addcoin(this)" class="column">
+                    <div class="cell vColumn"></div>
+                    <div class="cell vColumn"></div>
+                    <div class="cell vColumn"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+            </div>
+            <div id="pannel">
+                <div id="textWhoPlay">
+                    <p>Au tour de : </p>
+                    <div id="whoPlay"></div>
+                </div>
+                <button onclick="reset()">Nouvelle partie</button>
+                <p id="victory"></p>
+                <p id="score">Score de Jaune = 0 <br> Score de Rouge = 0</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Tu veux jouer contre : </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" id="player" onclick="player()" checked name="vs">
+                            </td>
+                            <td>
+                                <label for="vs">Un joueur</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" id="ia"  onclick="ia()" name="vs">
+                            </td>
+                            <td>
+                                <label for="vs">Une ia débutante</label>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                            <td>
+                                <input type="radio" id="secondia"  onclick="secondia()" name="vs">
+                            </td>
+                            <td>
+                                <label for="secondia">Une ia avancée</label>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="/assets/script/script.js"></script>
+
+</html>
