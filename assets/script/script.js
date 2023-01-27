@@ -23,9 +23,9 @@ function addcoin(elem) {
                 victory();
                 if (players == false) {
                     for (let j = 0; j < cells.length; j++) {
-                        
+
                     }
-                    
+
                 }
             }
         }
@@ -43,7 +43,7 @@ function reset() {
     }
 }
 
-function player(){
+function player() {
     reset()
     redCount = 0
     yellowCount = 0
@@ -52,7 +52,7 @@ function player(){
 
 }
 
-function ia(){
+function ia() {
     reset()
     redCount = 0
     yellowCount = 0
@@ -102,11 +102,11 @@ function victory(color) {
     }
 }
 
-function refreshScore(addpoint){
+function refreshScore(addpoint) {
     if (addpoint) {
         if (round == 0) {
             yellowCount++
-    
+
         } else {
             redCount++
         }
